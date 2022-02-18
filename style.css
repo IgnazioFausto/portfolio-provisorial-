@@ -10,12 +10,12 @@ body {
   border: 2px solid red;
 }
 div.portada {
-  position: absolute;
+  display: block;
+  position: relative;
   width: 1360px;
-  height: 820px;
+  height: 1000px;
   left: 40px;
   top: 155px;
-  border: 2px solid red;
 }
 .titulo {
   background: -webkit-linear-gradient(
@@ -117,11 +117,11 @@ div.portada {
 /* divisor */
 
 div.content-divisor {
-  position: absolute;
+  display: block;
+  position: relative;
   width: 1440px;
   height: 50px;
-  left: 2px;
-  top: 985px;
+  
 
   background: linear-gradient(
     180deg,
@@ -132,11 +132,9 @@ div.content-divisor {
 
 /* divisor con texto */
 .sub-divisor p {
-  position: absolute;
-  width: 141.35px;
-  height: 18px;
-  left: 649.32px;
-  top: 1063px;
+  display: block;
+  position: relative;
+  width: 100%;
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
@@ -149,26 +147,27 @@ div.content-divisor {
   color: #ffffff;
 }
 .sub-divisor div.sub-content {
-  position: absolute;
+  display: block;
+  position: relative;
   width: 1360px;
-  height: 0px;
-  left: 40px;
-  top: 1101px;
-
+  height: 1px;
+  margin: 2rem auto;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 .targs {
-  top: 1201px;
+  display: flex;
+  position: relative;
   width: 1360px;
-  height: 114px;
+  height: 100px;
+  margin: 4.5rem auto;
+  border: 4px solid green;
 }
 /* tarjetas */
 .html {
-  display: flex;
-  flex-direction: row;
+  display:flex;
   align-items: center;
   padding: 6px 12px;
-  position: absolute;
+  position: sticky;
   width: 210px;
   height: 50px;
   left: 270px;
@@ -177,16 +176,13 @@ div.content-divisor {
   border-radius: 4px;
 }
 .html p {
-  position: static;
-  width: 198px;
-  height: 18px;
-  left: 12px;
-  top: 16px;
+  position: relative;
+  width: 210px;
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  line-height: 18px;
+  line-height: 46px;
   text-align: center;
   color: #ffffff;
   flex: none;
@@ -195,43 +191,37 @@ div.content-divisor {
   margin: 0px 0px;
 }
 .css {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
 
-  position: absolute;
+  display: flex;
+  align-items: center;
+  position: sticky;
   width: 95px;
   height: 48px;
-  left: 525px;
-  top: 1141px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 6px 12px;
   mix-blend-mode: lighten;
   filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
   background: #cb4e33;
+  left: 550px;
   border-radius: 4px;
 }
 .css p {
-  width: 71px;
-  height: 18px;
-  left: 12px;
-  top: 16px;
+  position: relative;
+  width: 95px;
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  line-height: 18px;
+  line-height: 46px;
   text-align: center;
   color: #ffffff;
   flex: none;
   order: 0;
-  flex-grow: 1;
+  flex-grow: 0;
   margin: 0px 0px;
 }
+/*
 .boots {
   display: flex;
   flex-direction: row;
@@ -298,3 +288,4 @@ div.content-divisor {
   flex-grow: 1;
   margin: 0px 0px;
 }
+ */
