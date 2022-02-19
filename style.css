@@ -32,8 +32,6 @@ div.portada {
   font-weight: normal;
   font-size: 107px;
   line-height: 92px;
-  /* or 17% */
-
   width: 545px;
   left: 700px;
   border-radius: nullpx;
@@ -50,11 +48,8 @@ div.portada {
   font-weight: normal;
   font-size: 26px;
   line-height: 17px;
-  /* or 65% */
-
   text-align: center;
   letter-spacing: 0.9em;
-
   color: #ffffff;
 }
 .portada img {
@@ -104,32 +99,23 @@ div.portada {
   font-weight: normal;
   font-size: 25px;
   line-height: 1.5rem;
-  /* or 25% */
-
   text-align: center;
   letter-spacing: 0.1rem;
-
   color: #ffffff;
-
   mix-blend-mode: lighten;
 }
-
 /* divisor */
-
 div.content-divisor {
   display: block;
   position: relative;
   width: 1440px;
   height: 50px;
-  
-
   background: linear-gradient(
     180deg,
     rgba(15, 167, 149, 0.1) 0%,
     rgba(15, 167, 149, 0) 100%
   );
 }
-
 /* divisor con texto */
 .sub-divisor p {
   display: block;
@@ -140,37 +126,36 @@ div.content-divisor {
   font-weight: normal;
   font-size: 30px;
   line-height: 18px;
-  /* identical to box height, or 45% */
-
   text-align: center;
-
   color: #ffffff;
 }
 .sub-divisor div.sub-content {
   display: block;
   position: relative;
   width: 1360px;
-  height: 1px;
+  height: 0px;
   margin: 2rem auto;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 .targs {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
   width: 1360px;
   height: 100px;
   margin: 4.5rem auto;
-  border: 4px solid green;
+  margin-bottom: 8rem;
 }
 /* tarjetas */
 .html {
-  display:flex;
+  display: flex;
   align-items: center;
   padding: 6px 12px;
   position: sticky;
   width: 210px;
   height: 50px;
-  left: 270px;
+  margin-left: 10rem;
   top: calc(50% - 50px / 2 - 1335px);
   background: #cb8533;
   border-radius: 4px;
@@ -192,7 +177,6 @@ div.content-divisor {
 }
 .css {
   flex-direction: row;
-
   display: flex;
   align-items: center;
   position: sticky;
@@ -203,7 +187,7 @@ div.content-divisor {
   mix-blend-mode: lighten;
   filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
   background: #cb4e33;
-  left: 550px;
+  margin-left: 2rem;
   border-radius: 4px;
 }
 .css p {
@@ -221,71 +205,188 @@ div.content-divisor {
   flex-grow: 0;
   margin: 0px 0px;
 }
-/*
+
 .boots {
-  display: flex;
   flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 325px;
+  height: 48px;
   align-items: center;
   padding: 6px 12px;
-  position: absolute;
-  width: 325px;
-  height: 50px;
-  left: 665px;
-  top: calc(50% - 50px / 2 - 1335px);
-  background: #8756d7;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
   border-radius: 4px;
+  background: #8756d7;
+  margin-left: 2rem;
 }
 .boots p {
-  width: 71px;
-  height: 18px;
-  left: 12px;
-  top: 16px;
+  position: relative;
+  width: 313px;
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  line-height: 18px;
+  line-height: 46px;
   text-align: center;
   color: #ffffff;
   flex: none;
   order: 0;
-  flex-grow: 1;
+  flex-grow: 0;
   margin: 0px 0px;
 }
 .js {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 210px;
+  height: 48px;
   align-items: center;
   padding: 6px 12px;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
   border-radius: 4px;
-
-  position: absolute;
-  width: 225px;
-  height: 50px;
-  left: 1035px;
-  top: 1140px;
-  background: #c7b53f;
+  background: #C7B53F;
+  margin-left: 2rem;
 }
 .js p {
-  position: absolute;
+  position: relative;
   width: 210px;
-  height: 18px;
-  left: 12px;
-  top: 22px;
   font-family: Inika;
-  font-size: 40px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
+  font-weight: normal;
   font-size: 40px;
-  line-height: 18px;
+  line-height: 46px;
   text-align: center;
   color: #ffffff;
   flex: none;
   order: 0;
-  flex-grow: 1;
+  flex-grow: 0;
   margin: 0px 0px;
 }
- */
+.jquery {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 210px;
+  height: 48px;
+  align-items: center;
+  padding: 6px 12px;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
+  border-radius: 4px;
+  background: #0FA795;
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+.jquery p {
+  position: relative;
+  width: 198px;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+.python {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 210px;
+  height: 48px;
+  align-items: center;
+  padding: 6px 12px;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
+  border-radius: 4px;
+  background: #D0B115;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.python p {
+  position: relative;
+  width: 210px;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+.react {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 209px;
+  height: 48px;
+  align-items: center;
+  padding: 6px 12px;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
+  border-radius: 4px;
+  background: #51C2DF;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.react p {
+  position: relative;
+  width: 209px;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+.php {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 210px;
+  height: 48px;
+  align-items: center;
+  padding: 6px 12px;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0px 2px 6px rgba(42, 59, 77, 0.24));
+  border-radius: 4px;
+  background: #1026EB;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.php p {
+  position: relative;
+  width: 210px;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
